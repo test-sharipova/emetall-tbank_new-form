@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(/fonts/SegoeUI.ttf) format('ttf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url(/fonts/SegoeUIBold.ttf) format('ttf');
+    font-weight: 700;
+  }
+
+body {
+    font-family: 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+    color: #212529;
+}
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+details summary::-webkit-details-marker {
+    display: none
+  }
+  details > summary {
+    list-style: none;
+  }
+  details {
+    summary::marker { 
+      content: none;
+    }
+  }
+.container {
+    width: 90%;
+    max-width: 1208px;
+    margin: 0 auto;
+}
+
+//fonts
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    text-align: center;
+    max-width: 832px;
+    margin: 0 auto;
+    &_w790 {
+        max-width: 790px;
+    }
+    &_w760 {
+        max-width: 760px;
+    }
+}
+.fs_16 {
+    font-size: 16px;
+}
+.fs_18 {
+    font-size: 18px;
+}
+.fs_20 {
+    font-size: 20px;
+}
+.fs_24 {
+    font-size: 24px;
+}
+
+.lh_137 {
+    line-height: 137%;
+}
+.lh_139 {
+    line-height: 139%;
+}
+.lh_norm {
+    line-height: normal;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+
+//margins 
+.mb_8 {
+    margin-bottom: 8px;
+}
+.mb_12 {
+    margin-bottom: 12px;
+}
+.mb_16 {
+    margin-bottom: 16px;
+}
+.mb_24 {
+    margin-bottom: 24px;
+}
+.mb_32 {
+    margin-bottom: 32px;
+}
+.t-logo {
+    display: block;
+    width: 246px;
+    img {
+        max-width: 100%;
+        display: block;
+    };
+}
+.btn {
+    &_transparent {
+        background: transparent;
+        border: 2px solid #fff;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        padding: 0 49px;
+        white-space: nowrap;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+
+    }
+    &_blue {
+        border:none;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #2764E0;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: background-color .3s;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 8px 32px;
+        &:hover {
+            background-color: #3473f4;
+        }
+        &:active {
+            background-color: #104cc4;
+        }
+    }
+}
+.crumbs {
+    display: flex;
+    gap: 4px;
+    list-style-type: none;
+    width: fit-content;
+    margin: 0 auto;
+    &__link {
+        display: flex;
+        gap: 4px;
+        font-weight: 400;
+        font-size: 13px;
+        color: #212529;
+        opacity: 0.4;
+        text-decoration: none;
+        &::after {
+            content: '/';
+        }
+        
+    }
+    li {
+        &:last-child {
+            .crumbs__link {
+                &::after {
+                    display: none;
+                }
+            }
+           
+        }
+    }
+}
+
+@import '_promo.scss';
+@import '_finance.scss';
+@import '_poss.scss';
+@import '_broker.scss';
+@import '_form.scss';
+@import '_quest';
+@import '_credits';
+@import '_credit-wins.scss';
+@import '_modal.scss';
+@import '_media.scss';

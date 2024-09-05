@@ -1,0 +1,28 @@
+.t-finance {
+    padding: 60px 0 40px;
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+    &__item {
+        border-radius: 15px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.12);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+        padding: 40px 34px 0;
+        min-height: 485px;
+        .fs_16 {
+            flex-grow: 1;
+        }
+        img {
+            display: block;
+           max-width: 100%;
+        }
+    }
+}

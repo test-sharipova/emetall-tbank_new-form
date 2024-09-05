@@ -1,0 +1,295 @@
+@media screen and (max-width:1023px) {
+    .title {
+        font-size: 24px;
+    }
+    .t-finance {
+        &__list {
+            gap: 8px;
+        }
+        &__item {
+            padding: 12px;
+            border-radius: 8px;
+            .fs_24 {
+                font-size: 16px;
+            }
+            .fs_16 {
+                font-size: 14px;
+            }
+            min-height: auto;
+        }
+    }
+    .poss {
+        &__list {
+            gap: 16px;
+            &2 {
+                gap: 8px;
+            }
+            &3 {
+                grid-template-columns: repeat(2, 1fr);
+                .poss__item {
+                    padding: 20px;
+                    min-height: auto;
+                    .fs_24 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &__item {
+            &2 {
+                padding: 16px;
+                .fs_24 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .t-form {
+        &__wrap {
+            padding: 24px;
+        }
+        &__form {
+            grid-template-columns: 1fr;
+            .btn_blue {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .credit-wins {
+        &__list {
+            gap: 12px;
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            min-height: auto;
+            img {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .t-form-new {
+        &__form {
+            grid-template-columns: repeat(2, 1fr);
+            &__inn {
+                grid-column: 1/2;
+            }
+            &__phone {
+                grid-column: 2/3;
+            }
+            &__email {
+                grid-column: 1/2;
+            }
+            &__name {
+                grid-column: 2/3;
+            }
+            &__surname {
+                grid-column: 1/-1;
+            }
+            .policy {
+                grid-column: auto;
+            }
+            .btn_blue {
+                grid-column: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+    .title {
+        br {
+            display: none;
+        }
+        text-align: left;
+    }
+    .fs_18 {
+        text-align: left;
+        font-size: 16px;
+    }
+    .t-logo {
+        width: 180px;
+    }
+    .crumbs {
+        margin: 0;
+    }
+    .t-promo {
+        &__title {
+            font-size: 32px;
+        }
+
+        padding-bottom: 250px;
+        background-position: bottom;
+        background-size: 80%, cover;
+        &-broker {
+            
+            background-image: url(../img/brok-promo-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+           
+        }
+        &-credit {
+            
+            background-image: url(../img/credit1-promo-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+            
+        }
+        &2-credit {
+            background-image: url(../img/credit1-promo2-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+           padding: 24px 0;
+           padding-bottom: 200px;
+           .container {
+            width: 100%;
+            padding: 0 16px;
+           }
+           .t-promo {
+            &__title {
+                font-size: 32px;
+            }
+           }
+        }
+        &-credit2 {
+            
+            background-image: url(../img/credit2-promo-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+            
+        }
+        &-ved {
+            background-image: url(../img/ved-promo-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+        }
+        &-a2c {
+            background-image: url(../img/a2c-promo-bg-mob.png), linear-gradient(152deg, rgb(24%, 35%, 82%, .3) 0%, rgb(80%, 7%, 40%, .3) 100%);
+        }
+        .btn_blue {
+            width: 100%;
+        }
+    }
+   
+    .credits .t-promo2-credit .container {
+        width: 100%;
+    }
+    .t-finance {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        &__item {
+            padding: 20px 20px 0;
+            img {
+                width: 50%;
+                margin: 16px auto 0;
+            }
+        }
+    }
+    .poss {
+        &__list {
+            grid-template-columns: 1fr;
+            margin: 24px 0 0;
+            gap: 40px;
+            .fs_24 {
+                font-size: 18px;
+                max-width: 84%;
+            }
+            img {
+                width: 32px;
+                margin-bottom: 16px;
+            }
+            &2 {
+                grid-template-columns: 1fr;
+            }
+            &3 {
+                gap: 24px;
+                .poss__item {
+                    min-height: 200px;
+                }
+            }
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 16px;
+            &2 {
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+                    grid-column: 1/-1;
+                    min-height: 160px;
+                }
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                column-gap: 16px;
+                .fs_24 {
+                    max-width: 80%;
+                }
+                img {
+                    width: 36px;
+                }
+            }
+        }
+    }
+    .broker {
+        &__list {
+            gap: 16px;
+            margin-top: 24px;
+        }
+        &__item {
+            padding: 24px;
+        }
+        &_pt100 {
+            padding-top: 40px;
+        }
+    }
+    .t-form {
+        &__wrap {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+    .t-quest {
+        &__summary {
+            font-size: 18px;
+        }
+        &__wrap {
+            width: 100%;
+        }
+    }
+    .credit-wins {
+        &__item {
+            padding: 24px 24px 0;
+        }
+    }
+    .t-form-new {
+        .fs_24 {
+            font-size: 20px;
+        }
+        &__form {
+            grid-template-columns: 1fr;
+            &__inn {
+                grid-column: 1/-1;
+            }
+            &__phone {
+                grid-column: 1/-1;
+            }
+            &__email {
+                grid-column: 1/-1;
+            }
+            &__name {
+                grid-column: 1/-1;
+            }
+            &__surname {
+                grid-column: 1/-1;
+            }
+            row-gap: 16px;
+        }
+        &__wrap {
+            padding: 24px;
+        }
+    }
+    .t-modal {
+        &__thanks {
+            padding: 16px;
+            width: 90%;
+        }
+    }
+}

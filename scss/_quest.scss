@@ -1,0 +1,44 @@
+.t-quest {
+    padding: 40px 0 100px;
+    &__wrap {
+        margin: 0 auto 40px;
+        width: 90%;
+        max-width: 1048px;
+        margin-top: 26px;
+    }
+    &__summary {
+        font-weight: 600;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        padding-right: 36px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 17px;
+            height: 10px;
+            display: block;
+            background: url(../img/t-arrow-down.svg) no-repeat center/contain;
+            transition: .1s;
+        }
+        
+    }
+    &__details {
+        border-bottom: 1px solid #ddd;
+        padding: 16px 0;
+        .fs_16 {
+            margin-top: 16px;
+        }
+    }
+    &__details[open] .t-quest__summary::after {
+        transform: rotate(180deg) translateY(-50%);
+    }
+    .btn_blue {
+        max-width: 465px;
+        margin: 0 auto;
+        height: 56px;
+    }
+}
