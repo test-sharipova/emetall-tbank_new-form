@@ -8,7 +8,12 @@ for (let i = 0; i < element.length; i++) {
     let mask = IMask(element[i], maskOptions);
 }
 
-//modal thanks
+//закрыть modal thanks
+
 $('.t-modal__close').on('click', function(){
     $('.t-modal__thanks, .overlay').fadeOut();
 });
+//показать modal thanks (удалить после согласования верстки)
+$('.t-form-new .btn_blue').on('click', function(){
+    $('.t-modal__thanks, .overlay').fadeIn();
+})

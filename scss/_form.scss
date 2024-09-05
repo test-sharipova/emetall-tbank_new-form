@@ -53,7 +53,7 @@
             color: #212529;
         }
         &:focus {
-            outline: 4px solid #E9EFFC;
+            outline: 1px solid transparent;
             border: 1px solid #2764E0;
           }
     }
@@ -89,14 +89,47 @@
             align-items: end;
             gap: 24px 16px;
             max-width: 712px;
-            margin: 23px auto 0;
+            margin: 43px auto 0;
             label {
+                position: relative;
                 span {
                     font-weight: 600;
                     font-size: 12px;
                     display: block;
                     margin-bottom: 4px;
                     line-height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+                    transform: translateY(-50%);
+                    transition: transform .3s;
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                    span:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+            input:not(:placeholder-shown) + span,
+            input:focus-visible + span {
+                top: 0%;
+                left: 0;
+                transform: translateY(calc(-100% - 10px));
+                color: #000;
+                
+                span:nth-child(2) {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 12px;
+                    width: fit-content;
+                }
+                span:nth-child(1) {
+                    display: none;
                 }
             }
             &__inn {
@@ -109,7 +142,7 @@
                 input[type="number"] {
                 -moz-appearance: none;
                 }
-}
+                }
             }
             &__phone {
                 grid-column: 3/5;
@@ -151,3 +184,4 @@
         }
     }
 }
+

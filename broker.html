@@ -117,21 +117,38 @@
                 <div class="t-form__wrapper">
                     <div class="t-form-new__wrap">
                        
-                        <p class="fs_24 fw_600 lh_norm mb_12 center">Оставьте заявку, чтобы открыть брокерский счет</p>
-                        <p class="fs_18 lh_139 center">Открыть счет могут только юрлица, не подходит для ИП</p>
+                        <p class="fs_24 fw_600 lh_norm mb_12 center">Оставьте заявку, чтобы подключить сервис для безналичных расчетов</p>
+                        <p class="fs_18 lh_139 center">Подключить сервис могут только юрлица, не подходит для ИП</p>
                         
                         <form action="#" class="t-form-new__form">
                             <label for="inn" class="t-form-new__form__inn">
-                                <span class="fs_12">Введите ИНН</span>
-                                <input type="number" name="" id="inn" required placeholder="ИНН *" class="t-form__input">
+                                <input type="number" name="" id="inn" placeholder="" class="t-form__input">
+                                <span class="fs_12"><span>ИНН*</span><span>Введите&nbsp;ИНН</span></span>
+                                
                             </label>
-                            <input type="text" name="" required placeholder="Телефон *" class="t-form__input phone t-form-new__form__phone">
-                            <input type="email" name="" required placeholder="E-mail*" class="t-form__input t-form-new__form__email">
-                            <input type="text" name="" placeholder="Имя" class="t-form__input t-form-new__form__name">
-                            <input type="text" name="" placeholder="Фамилия" class="t-form__input t-form-new__form__surname">
-
+                            <label for="telefon" class="t-form-new__form__phone">
+                                <input type="text" name="" id="telefon" placeholder="" class="t-form__input phone">
+                                <span class="fs_12"><span>Телефон*</span><span>Введите&nbsp;телефон</span></span>
+                                
+                            </label>
+                            <label for="pochta" class="t-form-new__form__email">
+                                <input type="email" name="" id="pochta" placeholder="" class="t-form__input">
+                                <span class="fs_12"><span>E&#8209;mail*</span><span>Введите&nbsp;E&#8209;mail</span></span>
+                                
+                            </label>
+                            <label for="name1" class="t-form-new__form__name">
+                                <input type="text" name="" id="name1" placeholder="" class="t-form__input">
+                                <span class="fs_12"><span>Имя</span><span>Введите&nbsp;Имя</span></span>
+                                
+                            </label>
+                            <label for="name2" class="t-form-new__form__name t-form-new__form__surname">
+                                <input type="text" name="" id="name2" placeholder="" class="t-form__input">
+                                <span class="fs_12"><span>Фамилия</span><span>Введите&nbsp;Фамилию</span></span>
+                                
+                            </label>
+                            
                             <p class="policy">Ввод номера телефона подтверждает ваше <br> согласие c <a href="#">условиями передачи информации</a></p>
-                            <button type="submit" class="btn_blue">Открыть счет</button>
+                            <button type="submit" class="btn_blue">Подключить сервис</button>
                             
                         </form>
                     </div>
